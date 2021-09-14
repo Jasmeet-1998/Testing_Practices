@@ -1,0 +1,17 @@
+{
+  "name": "jest_cypress_basics",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "test": "jest --watchAll --verbose --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "vite": "^2.5.4"
+  },
+  "dependencies": {
+    "jest": "^27.2.0"
+  }
+}
