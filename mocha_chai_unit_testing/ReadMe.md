@@ -38,3 +38,63 @@
 ***
 
 > # Mocha & Chai
+
+- [x] **best practice is to seperate tests from the source code**
+- [x] **unit test describes the expected behaviour**
+
+                # consider you are developing a battle ship game engine and want to follow the BDD approach
+                # the steps & file structure will be like this
+
+                # in terminal
+                cd shipEngine
+                npm init -y
+                npm i mocha chai --save-dev
+
+                # General structure of test files
+                # create a directory named as 'test' (strict and case sensitive) this will contain all the tests
+                
+                Workspace
+                    -test
+                        *main_test.js
+                
+                # package.json
+                # add script
+                "test":"mocha"
+                
+                # running tests
+                npm test
+                # this will automatically run all the .js extension files inside the test directory
+
+> ### Test Suite & Test Specs
+
+- [x] **a test suite is a block of unit test that are closely related as they test the same function or similar part of the source code**
+
+                    # to introduce a test suite use describe
+                    # say we are testing wheather mocha works correctly or not
+                    # i.e its config are proper with proper file structure
+                    describe('Mocha',()=>{});
+
+                    # the second parameter is the callback function which includes the test 
+                    # that we want to run on the source code
+
+- [x] **each individual test is called test spec i.e unit test**
+                    describe('Mocha',()=>{
+                        // Test spec (unit test)
+                    });
+
+                    # 'it' is use to contain the unit test
+                    # expectations describe the expected behaviour of the function during testing
+                    
+                    describe('Mocha',()=>{
+                        // Test spec (unit test)
+                        it('should run our tests using npm',()=>{
+                            // contains expectations for the test to be passed
+                        });
+                    });
+
+> #### TestCases List: Battleship Game Engine 
+1:7:45
+- [x] Current player & winner
+- [x] Number of ships
+- [x] position of ships
+- [s] status that ship is active or sank
