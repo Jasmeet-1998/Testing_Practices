@@ -38,6 +38,8 @@
 ***
 
 > # Mocha & Chai
+**always refer docs - https://www.chaijs.com/api/bdd/**
+
 
 - [x] **best practice is to seperate tests from the source code**
 - [x] **unit test describes the expected behaviour**
@@ -93,8 +95,12 @@
                     });
 
 > #### TestCases List: Battleship Game Engine 
-1:7:45
+1:34:00
 - [x] Current player & winner
 - [x] Number of ships
 - [x] position of ships
 - [s] status that ship is active or sank
+
+> # Facts
+
+- [x] **In Javascript no two arrays even with identical values are never said to be equal so for these type of  cases comparing the values of two arrays(objects) use the .include or .deep in the expect bdd of chai docs**

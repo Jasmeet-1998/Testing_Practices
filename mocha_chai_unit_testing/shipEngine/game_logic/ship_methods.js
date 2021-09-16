@@ -11,9 +11,9 @@ function checkForShip(player,coordinates){
              (actualCordinates[1] === coordinates[1]);
             })[0]; //as we are only concern with the curretShip[0] indexed as it contain all the cordinates
         
-        // so that when multiple ships are their the function returns true
+        // so that when multiple ships are their the function returns ship i.e the ship that is present
         if(shipPresent){
-            return true;
+            return shipPresent;
         }
     }
     // loop ends the cordinate given by user didnt matched with any cordinates in the cordinateList
@@ -21,4 +21,18 @@ function checkForShip(player,coordinates){
     return false;
 }
 
+function damageShip(ship,coordinates){
+    ship.damage.push(coordinates);
+}
+
+function fire(player,coordinates){
+    var ship = checkForShip(player,coordinates);
+    if(ship){
+        damageShip(ship, coordinates);
+    }
+}
+
+
 module.exports.checkForShip = checkForShip;
+module.exports.damageShip = damageShip;
+module.exports.fire = fire;
