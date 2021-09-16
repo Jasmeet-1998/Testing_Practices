@@ -104,3 +104,5 @@
 > # Facts
 
 - [x] **In Javascript no two arrays even with identical values are never said to be equal so for these type of  cases comparing the values of two arrays(objects) use the .include or .deep in the expect bdd of chai docs**
+
+- [x] **as best practices make sure to minimize the code repition as low as possible using the beforeEach and before in chai & mocha to initialize dummy data for test cases**
