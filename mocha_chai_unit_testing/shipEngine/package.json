@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "test-watch": "mocha --reporter nyan --watch ./test ./",
+    "test-watch-gameInstance" : "mocha --reporter nyan --watch ./test/game.test.js ./game_logic/game_instance.js"
   },
   "keywords": [],
   "author": "",

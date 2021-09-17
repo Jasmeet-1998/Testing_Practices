@@ -95,7 +95,7 @@
                     });
 
 > #### TestCases List: Battleship Game Engine 
-1:34:00
+
 - [x] Current player & winner
 - [x] Number of ships
 - [x] position of ships
@@ -106,3 +106,31 @@
 - [x] **In Javascript no two arrays even with identical values are never said to be equal so for these type of  cases comparing the values of two arrays(objects) use the .include or .deep in the expect bdd of chai docs**
 
 - [x] **as best practices make sure to minimize the code repition as low as possible using the beforeEach and before in chai & mocha to initialize dummy data for test cases**
+
+- [x] **when all the test suites pass their is no need of the dummy data so teardown phase kicks in mocha provides a teardown phase that includes removing unwanted variables**
+
+- [x] **in best practice it is not a good practice to write test for dom when already using jquery or react, it is also a bad practice to pass state between test suites.**
+
+- [x] **test should not be clever should be as basic as possible and should be written keeping in mind that we are using them to validate a specific behaviour of the function**
+
+- [x] **the teardown can be done by the after() & afterEach() hook in mocha**
+
+- [x] **after gets executed after all test spec has been completed while afterEach gets executed after each test spec completion**
+
+- [x] **use the .throw in chain to test for edge cases**
+
+- [x] **use the --reporter flag in mocha to customize the output of your test, example for customizing the output in such a way tha mocha only report for failing test use --reporter min**
+
+- [x] **to have a markdown look of the test reports use --reporter markdown, this is also helpful when writing tests into Readme or documentations**
+
+- [x] **We can outline the test suite by encapsulating inside another describe block also the it test specs without any expectations are considered as pending**
+
+- [x] **by xdescribe or xit we can tell mochau that this test suite or test spec is not yet completed or for just our sanity like a bookmark to start the work from tommorow**
+
+- [x] **watching test files, so that no need to explicitely write npm test each time, mocha automatically detects the change in code files and run test on it**
+
+- [x] **can be done with the --watch flag, mocha --watch ./test/game.test.js ./game_logic/game_instance.js, this will run the test in game.test.js each time their is change in the game_instance.js**
+
+ - [x] **mock and stubs comes in handy as fake helpers just like dummy variables players used in tes suites, mock functions act as helper for tested function dependancy**
+
+- [x] **asynchronous code test refer game.test.js**
