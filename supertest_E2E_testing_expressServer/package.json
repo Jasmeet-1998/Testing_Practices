@@ -1,0 +1,21 @@
+{
+  "name": "supertest_e2e_testing_expressserver",
+  "version": "1.0.0",
+  "description": "> Integration testing for express server/ REST API via **supertest**",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "jest --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "jest": "^27.2.2",
+    "nodemon": "^2.0.13",
+    "supertest": "^6.1.6"
+  }
+}
